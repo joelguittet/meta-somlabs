@@ -1,0 +1,37 @@
+/*
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2 as
+ * published by the Free Software Foundation.
+ */
+
+/* IO multiplexing */
+&iomuxc {
+	/* SD */
+	pinctrl_qspi: qspi {
+		fsl,pins = <
+			MX6UL_PAD_NAND_WP_B__QSPI_A_SCLK      0x70a1
+			MX6UL_PAD_NAND_READY_B__QSPI_A_DATA00 0x70a1
+			MX6UL_PAD_NAND_CE0_B__QSPI_A_DATA01   0x70a1
+			MX6UL_PAD_NAND_CE1_B__QSPI_A_DATA02   0x70a1
+			MX6UL_PAD_NAND_CLE__QSPI_A_DATA03     0x70a1
+			MX6UL_PAD_NAND_DQS__QSPI_A_SS0_B      0x70a1
+		>;
+	};
+};
+
+/* SD */
+&qspi {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_qspi>;
+	status = "okay";
+	ddrsmp=<0>;
+
+	flash0: n25q256a@0 {
+		#address-cells = <1>;
+		#size-cells = <1>;
+		compatible = "winbond,n25q256a";
+		spi-max-frequency = <29000000>;
+		spi-nor,ddr-quad-read-dummy = <6>;
+		reg = <0>;
+	};
+};

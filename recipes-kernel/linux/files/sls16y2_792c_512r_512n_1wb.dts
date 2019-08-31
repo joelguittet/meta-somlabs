@@ -1,0 +1,16 @@
+/*
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2 as
+ * published by the Free Software Foundation.
+ */
+
+/dts-v1/;
+
+#include "sls16xx-base.dtsi"
+#include "sls16xx-nand.dtsi"
+#include "sls16xx-bluetooth-murata-1dx.dtsi"
+#include "sls16xx-wifi-murata-1dx.dtsi"
+
+/ {
+	model = "SoMLabs SLS16Y2_792C_512R_512N_1WB";
+};

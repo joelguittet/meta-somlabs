@@ -1,0 +1,34 @@
+/*
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2 as
+ * published by the Free Software Foundation.
+ */
+
+/* IO multiplexing */
+&iomuxc {
+	/* Bluetooth */
+	pinctrl_uart5: uart5grp {
+		fsl,pins = <
+			MX6UL_PAD_CSI_DATA00__UART5_DCE_TX  0x1b0b1
+			MX6UL_PAD_CSI_DATA01__UART5_DCE_RX  0x1b0b1
+			MX6UL_PAD_CSI_DATA02__UART5_DCE_RTS 0x1b0b1
+			MX6UL_PAD_CSI_DATA03__UART5_DCE_CTS 0x1b0b1
+		>;
+	};
+
+	/* Bluetooth regulator enable */
+	pinctrl_regbt: regbtgrp {
+		fsl,pins = <
+			MX6UL_PAD_CSI_MCLK__GPIO4_IO17 0x17059
+		>;
+	};
+};
+
+/* Bluetooth */
+&uart5 {
+        pinctrl-names = "default";
+        pinctrl-0 = <&pinctrl_uart5>;
+        fsl,uart-has-rtscts;
+        dma-names = "", "";
+        status = "okay";
+};
