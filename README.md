@@ -106,7 +106,7 @@ Build minimal image:
 
 ### Machines with NAND device (sls16y2_792c_256r_256n_0sf, sls16y2_792c_256r_256n_1wb, sls16y2_792c_512r_512n_0sf, sls16y2_792c_512r_512n_1wb)
 
-Copy files in the images directory (replace core-image-minimal-<machine>.ubi by the wanted rootfs if you have build another image):
+Copy files in the images directory (replace core-image-minimal-sls16y2_792c_512r_512n_1wb.ubi by the wanted rootfs if you have build another image):
 
 	cp ~/yocto/build/tmp/deploy/images/sls16y2_792c_512r_512n_1wb/core-image-minimal-sls16y2_792c_512r_512n_1wb.ubi ~/yocto/images/rootfs.ubi
 	cp ~/yocto/build/tmp/deploy/images/sls16y2_792c_512r_512n_1wb/vsom-6ull-fb.bin ~/yocto/images/vsom-6ull-fb.bin
@@ -132,7 +132,7 @@ Restart the target. The console is available on SERIAL0 pins of the board. Speed
 
 ### Machines with eMMC device (sls16y2_792c_512r_04ge_0sf, sls16y2_792c_512r_04ge_1wb)
 
-Copy image file in the images directory (replace core-image-minimal-<machine>.wic by the wanted rootfs if you have build another image):
+Copy image file in the images directory (replace core-image-minimal-sls16y2_792c_512r_04ge_1wb.wic by the wanted rootfs if you have build another image):
 
 	cp ~/yocto/build/tmp/deploy/images/sls16y2_792c_512r_04ge_1wb/core-image-minimal-sls16y2_792c_512r_04ge_1wb.wic ~/yocto/images/rootfs.wic
 
@@ -157,7 +157,7 @@ Restart the target. The console is available on SERIAL0 pins of the board. Speed
 
 ### Machines with SD card (sls16y2_792c_512r_sd_0sf, sls16y2_792c_512r_sd_1wb)
 
-Copy image file in the images directory (replace core-image-minimal-<machine>.wic by the wanted rootfs if you have build another image):
+Copy image file in the images directory (replace core-image-minimal-sls16y2_792c_512r_sd_1wb.wic by the wanted rootfs if you have build another image):
 
 	cp ~/yocto/build/tmp/deploy/images/sls16y2_792c_512r_sd_1wb/core-image-minimal-sls16y2_792c_512r_sd_1wb.wic ~/yocto/images/rootfs.wic
 
