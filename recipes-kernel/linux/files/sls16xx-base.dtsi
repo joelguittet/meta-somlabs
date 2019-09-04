@@ -19,23 +19,30 @@
 		reg = <0x80000000 0x0>;
 	};
 
-	/* 3.3V */
-	reg_3v3: regulator-3v3 {
-		compatible = "regulator-fixed";
-		regulator-name = "reg-3v3";
-		regulator-min-microvolt = <3300000>;
-		regulator-max-microvolt = <3300000>;
-		regulator-always-on;
-	};
+        /* Regulators */
+	regulators {
+		compatible = "simple-bus";
+		#address-cells = <1>;
+		#size-cells = <0>;
+                
+		/* 3.3V */
+		reg_3v3: regulator-3v3 {
+			compatible = "regulator-fixed";
+			regulator-name = "reg-3v3";
+			regulator-min-microvolt = <3300000>;
+			regulator-max-microvolt = <3300000>;
+			regulator-always-on;
+		};
 
-	/* 5V */
-	reg_5v0: regulator-5v0 {
-		compatible = "regulator-fixed";
-		regulator-name = "reg-5v";
-		regulator-min-microvolt = <5000000>;
-		regulator-max-microvolt = <5000000>;
-		regulator-always-on;
-	};
+		/* 5V */
+		reg_5v0: regulator-5v0 {
+			compatible = "regulator-fixed";
+			regulator-name = "reg-5v";
+			regulator-min-microvolt = <5000000>;
+			regulator-max-microvolt = <5000000>;
+			regulator-always-on;
+		};
+        };
 };
 
 /* IO multiplexing */
