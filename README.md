@@ -31,6 +31,8 @@ The following machines are supported in this meta layer:
 * sls16y2_792c_512r_sd_0sf: VisionSOM-6ULL with 512MB RAM, uSD
 * sls16y2_792c_512r_sd_1wb: VisionSOM-6ULL with 512MB RAM, uSD, Wi-Fi + Bluetooth Murata 1DX module
 
+The linux-fslc-imx-somlabs recipe build device tree based on the name of the machine: sls16y2_792c_256r_256n_0sf.dts used for sls16y2_792c_256r_256n_0sf machine, etc. It is possible to override the default device tree source in another layer with a higher priority to customize the target, or you can create a new machine and a new device tree that match it.
+
 
 Using
 --
