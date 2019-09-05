@@ -34,8 +34,8 @@ SRC_URI += " \
 
 S = "${WORKDIR}/git"
 
-LOCALVERSION = "-fslc-imx-somlabs"
 LINUX_VERSION ?= "4.9.67"
+LINUX_VERSION_EXTENSION ?= "-fslc"
 PV = "${LINUX_VERSION}+git${SRCPV}"
 
 # We need to pass it as param since kernel might support more than one machine, with different entry points
