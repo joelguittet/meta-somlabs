@@ -15,7 +15,7 @@ This layer depends on the additional mandatory layers:
 
 Examples to use this layer are available in my Github at https://github.com/myfreescalewebpage/meta-somlabs-examples.
 
-**Important note: VisionSOM-6ULL modules are all created in the meta-layer but only sls16y2_792c_512r_512n_0sf and sls16y2_792c_512r_512n_1wb machines are tested. I'm not a SoMLabs employee, I haven't all modules myself. If anyone would like to help flashing and running images for the other machines, feedback and/or fixes are welcome.**
+**Important note: VisionSOM-6ULL modules are all created in the meta-layer but only sls16y2_792c_512r_512n_0sf, sls16y2_792c_512r_512n_1wb and sls16y2_792c_512r_sd_0sf machines are tested. I'm not a SoMLabs employee, I haven't all modules myself. If anyone would like to help flashing and running images for the other machines, feedback and/or fixes are welcome.**
 
 
 Machines
