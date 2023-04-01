@@ -13,7 +13,7 @@ This layer depends on the additional mandatory layers:
 * meta-openembedded/meta-networking
 * meta-freescale
 
-Examples to use this layer are available in my Github at https://github.com/myfreescalewebpage/meta-somlabs-examples.
+Examples to use this layer are available in my Github at https://github.com/joelguittet/meta-somlabs-examples.
 
 **Important note: VisionSOM-6ULL modules are all created in the meta-layer but only sls16y2_792c_512r_512n_0sf, sls16y2_792c_512r_512n_1wb and sls16y2_792c_512r_sd_0sf machines are tested. I'm not a SoMLabs employee, I haven't all modules myself. If anyone would like to help flashing and running images for the other machines, feedback and/or fixes are welcome.**
 
@@ -52,11 +52,11 @@ Clone sources:
 	git clone --branch warrior git://git.yoctoproject.org/poky.git ~/yocto/poky
 	git clone --branch warrior git://git.openembedded.org/meta-openembedded ~/yocto/meta-openembedded
 	git clone --branch warrior https://github.com/Freescale/meta-freescale.git ~/yocto/meta-freescale
-	git clone --branch warrior https://github.com/myfreescalewebpage/meta-somlabs.git ~/yocto/meta-somlabs
+	git clone --branch warrior https://github.com/joelguittet/meta-somlabs.git ~/yocto/meta-somlabs
 
 Get SoMLabs tools:
 
-	git clone --branch warrior https://github.com/myfreescalewebpage/somlabs-tools ~/yocto/somlabs-tools
+	git clone --branch warrior https://github.com/joelguittet/somlabs-tools ~/yocto/somlabs-tools
 
 Create images directory:
 
@@ -115,9 +115,9 @@ Copy files in the images directory (replace core-image-minimal-sls16y2_792c_512r
 
 Then start the target in SERIAL mode, with first USB port connected to your computer. If using the VisionSOM-6ULL-STD carrier board, you can refer to the following images.
 
-![SERIAL](https://github.com/myfreescalewebpage/somlabs-tools/blob/warrior/visionsom-6ull-std-serial-mode.jpg)
+![SERIAL](https://github.com/joelguittet/somlabs-tools/blob/warrior/visionsom-6ull-std-serial-mode.jpg)
 
-![USB](https://github.com/myfreescalewebpage/somlabs-tools/blob/warrior/visionsom-6ull-std-usb-uuu.jpg)
+![USB](https://github.com/joelguittet/somlabs-tools/blob/warrior/visionsom-6ull-std-usb-uuu.jpg)
 
 Flash the target:
 
@@ -128,7 +128,7 @@ Logs are displayed in the terminal and on the serial console interface (SERIAL0)
 
 At the end of the flashing procedure, the NAND device is flashed. Disconnect the power supply and set the target in INTERNAL mode. If using the VisionSOM-6ULL-STD carrier board, you can refer to the following image.
 
-![INTERNAL](https://github.com/myfreescalewebpage/somlabs-tools/blob/warrior/visionsom-6ull-std-internal-mode.jpg)
+![INTERNAL](https://github.com/joelguittet/somlabs-tools/blob/warrior/visionsom-6ull-std-internal-mode.jpg)
 
 Restart the target. The console is available on SERIAL0 pins of the board. Speed is 115200. Login is 'root' with no password.
 
@@ -140,9 +140,9 @@ Copy image file in the images directory (replace core-image-minimal-sls16y2_792c
 
 Then start the target in SERIAL mode, with first USB port connected to your computer. If using the VisionSOM-6ULL-STD carrier board, you can refer to the following images.
 
-![SERIAL](https://github.com/myfreescalewebpage/somlabs-tools/blob/warrior/visionsom-6ull-std-serial-mode.jpg)
+![SERIAL](https://github.com/joelguittet/somlabs-tools/blob/warrior/visionsom-6ull-std-serial-mode.jpg)
 
-![USB](https://github.com/myfreescalewebpage/somlabs-tools/blob/warrior/visionsom-6ull-std-usb-uuu.jpg)
+![USB](https://github.com/joelguittet/somlabs-tools/blob/warrior/visionsom-6ull-std-usb-uuu.jpg)
 
 Flash the target:
 
@@ -153,7 +153,7 @@ Logs are displayed in the terminal and on the serial console interface (SERIAL0)
 
 At the end of the flashing procedure, the eMMC device is flashed. Disconnect the power supply and set the target in INTERNAL mode. If using the VisionSOM-6ULL-STD carrier board, you can refer to the following image.
 
-![INTERNAL](https://github.com/myfreescalewebpage/somlabs-tools/blob/warrior/visionsom-6ull-std-internal-mode.jpg)
+![INTERNAL](https://github.com/joelguittet/somlabs-tools/blob/warrior/visionsom-6ull-std-internal-mode.jpg)
 
 Restart the target. The console is available on SERIAL0 pins of the board. Speed is 115200. Login is 'root' with no password.
 
@@ -170,7 +170,7 @@ Flash the SD card (replace sdX by the right SD card device):
 
 At the end of the flashing procedure, the SD card is flashed. Insert the SD card in the VisionSOM-6ULL module and set the target in INTERNAL mode. If using the VisionSOM-6ULL-STD carrier board, you can refer to the following image.
 
-![INTERNAL](https://github.com/myfreescalewebpage/somlabs-tools/blob/warrior/visionsom-6ull-std-internal-mode.jpg)
+![INTERNAL](https://github.com/joelguittet/somlabs-tools/blob/warrior/visionsom-6ull-std-internal-mode.jpg)
 
 Restart the target. The console is available on SERIAL0 pins of the board. Speed is 115200. Login is 'root' with no password.
 
